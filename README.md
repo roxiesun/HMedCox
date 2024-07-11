@@ -49,8 +49,8 @@ mu2 = 0.5*q + cos(pi*x[,9])
 Sigma = matrix(c(1.0,0.1,0.1,1.44), nrow = 2)
 m.true = cbind(mu1 + tau_m1*a, mu2 + tau_m2*a) + rmvnorm(n,sigma = Sigma)
 
-temp = exp( -0.2*abs(x[,3]) + 0.5*(x[,12]) #- sin(pi*m.true[,1]) 
-               + 1*m.true[,2]*(1 + 0.5*(x[,6] > 0.5)) + 1*m.true[,1]  - 1*tau_y*a )
+temp = exp( -0.2*abs(x[,3]) + 0.5*(x[,12])
+            + 1*m.true[,2]*(1 + 0.5*(x[,6] > 0.5)) + 1*m.true[,1]  - 1*tau_y*a )
 truehzd = log(temp)
 T <- (-1/(1*temp))*log(runif(n))
 
