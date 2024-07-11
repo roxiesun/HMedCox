@@ -1,0 +1,18 @@
+Package: bthm
+Type: Package
+Title: Bayesian tree ensembles for heterogeneous mediation with survival data
+Version: 4.0.7
+Date: 2024-01-30
+Authors@R: c(
+    person("Rongqian", "Sun", , "sunrq@link.cuhk.edu.hk", c("aut", "cre")),
+    person("Xinyuan", "Song", role = "aut"))
+Description: Bayesian tree-based mediation analysis with survival outcome, multiple mediator allowed, adaptive to M2 devices
+License: GPL-3
+Imports: 
+    Rcpp,
+    RcppArmadillo,
+    RcppParallel, coda (>= 0.19.3), parallel, doParallel, foreach, matrixStats, methods
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+RoxygenNote: 7.2.3
+SystemRequirements: GNU make
+Encoding: UTF-8
